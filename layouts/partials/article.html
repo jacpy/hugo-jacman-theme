@@ -1,0 +1,18 @@
+<section class="post" itemscope itemprop="blogPost">
+	<article class="post-expand post" itemprop="articleBody">
+    {{ partial "article_header.html" . }}
+		<div class="article-content">
+			<p itemprop="description">{{ .Summary }}</p>
+			<!--<time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.DateFormat }}</time>-->
+			<p class="article-more-link">         
+				<a href="{{ .Permalink }}">Read More</a>
+			</p>
+		</div>
+		<footer class="article-footer clearfix">
+			{{ partial "article_catetags.html" . }}
+		</footer>
+		
+	<article itemprop="articleBody">
+	
+	
+</section>
